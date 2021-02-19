@@ -29,7 +29,23 @@ const app = Vue.createApp({
                     description2:'ท็อปปิ้งทางเลือก : ราสเบอร์รี่ร้อนแรง (เพิ่มพลังโจมตี)',
                     done: false,
                     show: false
-                }
+                },
+                {
+                    image: 'images/Cookie-Run-4.jpg',
+                    title: 'คุกกี้รสสมุนไพร ',
+                    description: 'ท็อปปิ้งแนะนำ : ช็อกโกแลตชิพรสเข้ม (ลดคูลดาวน์) ',
+                    description2:'ท็อปปิ้งทางเลือก : ราสเบอร์รี่ร้อนแรง (เพิ่มพลังโจมตี)',
+                    done: false,
+                    show: false
+                },
+                {
+                    image: 'images/Cookie-Run-5.jpg',
+                    title: 'คุกกี้สาวเจ้าป่า',
+                    description: 'ท็อปปิ้งแนะนำ : ช็อกโกแลตชิพรสเข้ม (ลดคูลดาวน์)',
+                    description2:'ท็อปปิ้งทางเลือก : ราสเบอร์รี่ร้อนแรง / เยลลี่แอปเปิ้ลฉํ่า (เพิ่มพลังโจมตี / อัตราคริติคอล) ',
+                    done: false,
+                    show: false
+                },
             ],
 
             searchButton: false,

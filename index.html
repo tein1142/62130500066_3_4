@@ -18,7 +18,11 @@
   <!-- Vue CDN -->
   <script src="https://unpkg.com/vue@next"></script>
 
-
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+</style>
 </head>
 
 <body>
@@ -60,11 +64,11 @@
               class="rounded-full bg-green-500 hover:bg-red-400 p-2 text-1xl ml-2 font-bold">Close</button>
           </div>
         </div>
-        <h1 class="text-2xl font-bold ml-12 mt-4 mb-4">Like Picture ({{countLike}})</h1>
+        <h1 id="likePic" class="text-2xl font-bold ml-12 mt-4 mb-4">Like Picture ({{countLike}})</h1>
 
 
 
-        <div v-show="canvasPic" class="bg-black">
+        <div id="canvas" v-show="canvasPic" class="bg-black">
           <div class="flex justify-end">
             <button @click="closeCanvas" class="mr-4 mt-2">
               <span class="material-icons text-white rounded rounded-full bg-red-500">
@@ -73,7 +77,7 @@
             </button>
           </div>
           <div class="flex justify-center">
-            <img class="mb-10" v-bind:src="canvasPic" width="300">
+            <img class="mb-10" v-bind:src="canvasPic" width="400">
           </div>
         </div>
 
@@ -85,7 +89,7 @@
               <ul>
                 <li>
                   <button @click="showCanvas(pic.image)" v-on:dblclick="toggleDone(index)">
-                    <img v-bind:src="pic.image" class="mt-8 hover:shadow " width="250">
+                   <a href="#likePic"><img v-bind:src="pic.image" class="mt-8 hover:shadow " width="250"></a> 
 
                   </button>
                   <p class="font-bold text-blue-800">{{pic.title}}
