@@ -64,8 +64,8 @@ const app = Vue.createApp({
             
         },
 
-        toggleDone(index) {
-            console.log("testToggle1");
+        toggleDone(text) {
+            const index = this.pics.findIndex(pic => pic.title == text)
             this.pics[index].done = !this.pics[index].done
         },
 
